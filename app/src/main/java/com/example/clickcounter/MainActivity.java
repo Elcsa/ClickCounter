@@ -29,14 +29,22 @@ private int szam;
             @Override
             public void onClick(View view) {
             szam++;
+                System.out.println(szam);
             }
         });
         minusz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 szam--;
+                System.out.println(szam);
             }
         });
+        if(szam>0){
+            text.setTextColor(Color.rgb(0,255,0));
+        }else{
+            text.setTextColor(Color.rgb(255,0,0));
+        }
+
     }private void init(){
         text=findViewById(R.id.text);
         plusz=findViewById(R.id.plusz);
