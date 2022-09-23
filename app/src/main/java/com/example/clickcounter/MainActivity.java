@@ -41,7 +41,10 @@ private int szam;
         });
         if(szam>0){
             text.setTextColor(Color.rgb(0,255,0));
-        }else{
+        }else if(szam==0){
+            text.setTextColor(Color.rgb(0,0,255));
+        }
+        else{
             text.setTextColor(Color.rgb(255,0,0));
         }
 
